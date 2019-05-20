@@ -1,0 +1,4 @@
+.stll {text-align: center; padding:0 10px; opacity:0.5; transition: all 0.3s;}
+.stll img {width:100%;}
+
+.slick-active.slick-center .stll {opacity:1;}

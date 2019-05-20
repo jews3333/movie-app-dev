@@ -1,0 +1,11 @@
+.movieList {width:100%; display:flex; justify-content: space-between; flex-wrap: wrap; margin-top:100px;}
+.movieList .listItem {width:calc(50% - 10px); position: relative; margin-bottom:100px; box-shadow: 5px 5px 10px rgba(0,0,0,.3);}
+.movieList .listItem > a {display:block; color:#333;}
+.movieList .listItem .num {position: absolute; display:table; text-align: center; top:-20px; left:-20px; width:40px; height:40px; border-radius:50%; color:#fff; font-weight:bold; line-height:1; font-size: 1.4em; background:#e5004f;}
+.movieList .listItem .num > span {display:table-cell; vertical-align: middle;}
+.movieList .listItem .itemImg {position: absolute; bottom:20px ;right: 20px; width:180px; overflow:hidden; box-shadow:3px 3px 7px rgba(0,0,0,.3);}
+.movieList .listItem .itemImg img {width:100%; vertical-align: top;}
+.movieList .listItem .itemInfo {background:#fff; height:200px; padding:20px 220px 20px 20px;}
+.movieList .listItem .itemInfo .title {font-size:1.1em; font-weight: bold; margin-bottom:10px;}
+.movieList .listItem .itemInfo .genre {font-size: 0.9em; color:#666; margin-bottom:10px;}
+.movieList .listItem .itemInfo .plot {font-size:0.9em;}

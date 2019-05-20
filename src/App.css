@@ -1,0 +1,4 @@
+.App {max-width:1000px; width:100%; margin:0 auto;}
+.App:after {content:""; clear:both; display:block;}
+
+.App h3 {text-align: center; margin-bottom:10px;}

@@ -1,0 +1,14 @@
+.movieInfo {background:#fff; padding:30px;}
+.movieInfo .title {font-size: 1.4em; margin-bottom:10px;}
+.movieInfo .poster {margin-bottom:20px;}
+.movieInfo .poster img {border:3px solid #ddd;}
+.movieInfo .formInfo {border-bottom:1px solid #ddd; display:flex; justify-content: space-between;}
+.movieInfo .formInfo dl {width:50%; display:flex; justify-content: space-between; padding: 10px 0;}
+.movieInfo .formInfo dt {width:100px; font-weight:bold;}
+.movieInfo .formInfo dd {width:calc(100% - 100px);}
+.movieInfo .formInfo dd > span:after {content:", ";}
+.movieInfo .formInfo dd > span:last-of-type:after {display:none;}
+.movieInfo .formContent {padding: 10px 10px 30px;}
+.movieInfo .formContent dt {position:absolute; text-indent:-9999px; font-size:0; line-height:0;}
+.movieInfo .formContent dd {line-height:1.8;}
+.movieInfo .stlls img {vertical-align: top;}
