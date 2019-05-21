@@ -4,6 +4,10 @@ import './Stlls.css';
 
 class Stlls extends React.Component {
 
+    static defaultProps = {
+        stlls : '-'
+    }
+
     renderStlls = () => {
         const stllsArray = this.props.stlls.split("|");
         const stlls = stllsArray.map((stll, index) => {
@@ -19,7 +23,7 @@ class Stlls extends React.Component {
             return 3;
         }
     }
-
+    
     render(){
         const settings = {
             centerMode: true,
@@ -34,7 +38,7 @@ class Stlls extends React.Component {
                 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
                 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
                 <Slider {...settings}>
-                    {this.props.stlls ? this.renderStlls() : null}
+                    {this.renderStlls()}
                 </Slider>
             </div>
         );

@@ -4,7 +4,7 @@ import './MovieList.css';
 class MovieList extends React.Component{
 
     render(){
-        const code = "/movieinfo/"+this.props.code;
+        const code = "/movie/info/"+this.props.code;
         return (
             <div className="listItem">
                 <a href={code}>

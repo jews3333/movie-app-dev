@@ -2,9 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 
-
-import Movie from './Movie';
-import MovieInfo from './MovieInfo';
+import Header from './component/Layout/Header';
+import Main from './component/Layout/Main';
+import Login from "./component/Login/Login";
+import Movie from './component/Movie/Movie';
+import MovieInfo from './component/Movie/MovieInfo';
 
 
 class App extends React.Component {
@@ -12,10 +14,13 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-          <Route exact path="/" component={Movie} />
+          <Header/>
+          <Route exact path="/" component={Main} />
+          <Route path="/login" component={Login} />
           <Switch>
-            <Route path="/movieinfo/:name" component={MovieInfo} />
-            <Route path="/movieinfo" component={MovieInfo} />
+            <Route path="/movie/info/:name" component={MovieInfo} />
+            <Route path="/movie/info" component={MovieInfo} />
+            <Route path="/movie" component={Movie} />
           </Switch>
         </div>
       </Router>
