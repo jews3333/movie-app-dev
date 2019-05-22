@@ -10,10 +10,22 @@ import MovieInfo from './component/Movie/MovieInfo';
 
 
 class App extends React.Component {
+
+  state = {username: null}
+
+  componentDidMount(){
+    fetch("/api/getUsername")
+    .then(res => res.json())
+    .then(user => this.setState({username: user.username}))
+    .catch(err => console.log(err))
+  }
+
   render (){
+    const { username } = this.state;
     return (
       <Router>
         <div className="App">
+          <p>{username ? this.state.username : "waiting"}</p>
           <Header/>
           <Route exact path="/" component={Main} />
           <Route path="/login" component={Login} />
